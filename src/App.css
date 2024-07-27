@@ -1,3 +1,15 @@
-#player-card{
-    border: 0.5px solid #000;
+.container-card{
+    gap: 10rem;
+    display: inline-flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+}
+
+.container-card .card{
+    width: 20rem;
+}
+
+.container-card .card-body{
+    background-color: #000;
+    color: #fff;
 }

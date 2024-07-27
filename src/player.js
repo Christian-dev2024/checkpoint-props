@@ -1,17 +1,22 @@
 import './App.css';
 
 
-const player = ({player}) =>{
-    return(
-        <div id='player-card'>
-            <h2>{player.nom}</h2>
-            <p>{player.numeroDuMaillot}</p>
-            <p>{player.position}</p>
-            <p>{player.team}</p>
-            <p>{player.âge}</p>
-            <p>{player.country}</p>
+const Player = ({player}) =>{
+    return( 
+        <div className='container-card'>
+            <div className="card" >
+                <img src={player.image} className="card-img-top" width={"100px"} alt="..." />
+                <div className="card-body">
+                    <h5>{player.nom}</h5>
+                    <p className="card-text">country : {player.country}</p>
+                    <p className="card-text">team : {player.team}</p>
+                    <p className="card-text">âge : {player.âge}</p>
+                    <p className="card-text">numero du maillot : {player.numeroDuMaillot}</p>
+                </div>
+            </div>
         </div>
+
     )
 }
 
-export default player; 
+export default Player; 

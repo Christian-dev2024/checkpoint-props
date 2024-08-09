@@ -7,7 +7,7 @@ function PlayerList() {
     return (
     <>
         {
-        players.map((data) => < Player key = {data.id} player = {data} /> )
+        players.map((data) => < Player key = {data.id} players = {data} /> )
         }
     </>
     );
